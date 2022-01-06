@@ -16,7 +16,7 @@ Now you have to run this command on your "home" machine.
 `chrfun() { zcat | grep -v '^#' | grep $1| egrep -o 'DP=[^;]*' |  sed 's/DP=//' > $2.csv ;}`
 $1 is the name of the chromosome, $2 is the under which I want to safe my file.
 `< /data-shared/vcf_examples/luscinia_vars_flags.vcf.gz chrfun  '^chrZ\s' zet`
-##Again, we have to save to our local disk
+## Again, we have to save to our local disk
 `Katerinka$ scp user13@ngs-course.duckdns.org:projects/kata/zet.csv .`
 
 ## In R studio – start by setting a working directory
