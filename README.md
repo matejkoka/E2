@@ -43,3 +43,5 @@ In this graph we can see how many reads (y) of a certain length (x) we can find 
 ![ffd72bac-832c-48f2-956d-e16ee926f436](https://user-images.githubusercontent.com/95171276/148310808-1f691057-920c-4551-b022-5aaa3619575c.png)
 
 
+
+
