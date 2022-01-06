@@ -119,5 +119,5 @@ In the plot (having read depth on y and position of loci on x) we can see, that 
   
 ![953f948e-61a9-4f24-bcff-8856e60756ea](https://user-images.githubusercontent.com/95171276/148382119-d841b933-aa9d-4953-ad92-6a1b0998c0f9.png)
   
- We can see, that the genome isn't covered in some portions (especially 5' ends of the chromosomes). I actually would expect, that both telomere regions would be the least amplified ones (but the graphs look pretty similiar for every chromosome I tried).
+ We can see, that the genome isn't covered in some portions (especially in the "right" telomere region). I actually would expect, that both telomere regions would be the least amplified ones (but the graphs look pretty similiar for every chromosome I tried).
 
