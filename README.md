@@ -84,13 +84,13 @@ Since my solution shown above is plotting DP against its counts (so basically sh
        col_names=c("POS", "DP"))`
        
 `dat %>%
- ggplot(aes(POS, DP)) +
- geom_line() +
- scale_x_log10()`
- 
-![80fadf17-9c1e-4854-97eb-b3eba3bacd3d](https://user-images.githubusercontent.com/95171276/148377784-ef626a3f-7ad5-4ca5-8c4c-163fd9273bde.png)
+  ggplot(aes(POS, DP)) +
+  geom_line()`
+  
+ ![aefc89ce-37cd-4d95-8f9d-3750adcc9b26](https://user-images.githubusercontent.com/95171276/148604285-66778bde-7098-4f19-a81d-918fb5437b6b.png)
 
-In the plot (having read depth on y and position of loci on x) we can see, that reads are covering chromosome mainly near to one telomere region.
+
+In the plot (having read depth on y and position of loci on x) we can see, that there are some gaps i reads – almost looks like some deletion event.
 
 
 ## How will it look like for the whole genome? Same, just without column extraction according to the chromosome
@@ -112,12 +112,12 @@ In the plot (having read depth on y and position of loci on x) we can see, that 
 `datg <- read_tsv("gg.tsv",
        col_names=c("POS", "DP"))`
        
-`datag %>% 
-  ggplot(aes(DP)) +
-  geom_histogram() +
-  scale_y_log10()`
+`dat %>%
+  ggplot(aes(POS, DP)) +
+  geom_line() `
   
-![953f948e-61a9-4f24-bcff-8856e60756ea](https://user-images.githubusercontent.com/95171276/148382119-d841b933-aa9d-4953-ad92-6a1b0998c0f9.png)
+![60bda3d3-25cd-413c-9d19-0c9dda014e71](https://user-images.githubusercontent.com/95171276/148604083-8ea543dc-60f9-451e-9a8b-f027452928bd.png)
+
   
- We can see, that the genome isn't covered in some portions (especially in the "right" telomere region). I actually would expect, that both telomere regions would be the least amplified ones (but the graphs look pretty similiar for every chromosome I tried).
+ We can see, that the genome isn't covered in some portions.
 
